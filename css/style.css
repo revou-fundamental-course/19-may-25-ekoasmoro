@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+}
+
+main {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  padding: 10px 20px;
+}
+
+.intro h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.input-group input {
+  width: 50%;
+  padding: 3px 10px;
+  min-height: 35px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.button-group button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}
+
+hr {
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.hasil {
+  display: flex;
+  flex-direction: column;
+}
+
+.hasil label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.hasil input {
+  margin-bottom: 20px;
+  width: 50%;
+  padding: 3px 10px;
+  min-height: 35px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.hasil textarea {
+  resize: none;
+  width: 60%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.penjelasan a {
+  text-decoration: none;
+}
+
+.penjelasan .detail {
+  margin-top: 20px;
+  padding: 10px;
+  border: dashed;
+  border-radius: 6px;
+}
+
+.penjelasan .detail h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.penjelasan .detail p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.penjelasan .detail span {
+  font-size: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  main {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .input-group input,
+  .hasil input,
+  .hasil textarea {
+    width: 100%;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    width: 100%;
+  }
+
+  .penjelasan .detail h3 {
+    font-size: 1.1rem;
+  }
+
+  .penjelasan .detail p {
+    font-size: 0.95rem;
+  }
+
+  .penjelasan .detail span {
+    font-size: 0.7rem;
+  }
+
+  .intro h1 {
+    font-size: 1.2rem;
+  }
+
+  .intro p {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.75rem;
+  }
+}

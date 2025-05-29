@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Konversi Suhu</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wghtgit@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main>
+      <!-- introduction -->
+      <section class="intro">
+        <h1>Selamat Datang di Website Konversi Suhu Temperatur</h1>
+        <p>
+          Silahkan masukkan suhu dalam derajat Celsius (&deg;C) pada kotak di
+          bawah, lalu klik tombol konversi ke Fahrenheit (&deg;F) atau
+          sebaliknya.
+        </p>
+      </section>
+      <!-- form konversi -->
+      <section class="form-konversi">
+        <form onsubmit="return false;">
+          <!-- inputan suhu -->
+          <div class="input-group">
+            <label for="Celsius">Celsius (&deg;C):</label>
+            <input
+              type="text"
+              id="Celsius"
+              placeholder="Masukkan suhu °C"
+              maxlength="4"
+              required
+            />
+          </div>
+
+          <!-- tombol action -->
+          <div class="button-group">
+            <button onclick="konversi()">Konversi</button>
+            <button onclick="reverse()">Reverse</button>
+            <button onclick="reset()">Reset</button>
+          </div>
+        </form>
+        <hr />
+      </section>
+      <!-- hasil konversi -->
+      <section class="hasil">
+        <label for="Fahrenheit">Fahrenheit (&deg;F):</label>
+        <!-- Menggunakan "tag input" agar tampilan lebih baik -->
+        <input
+          type="text"
+          id="Fahrenheit"
+          placeholder="Hasil konversi °F"
+          readonly
+        />
+        <label for="cara">Cara Kalkulasi:</label>
+        <textarea id="cara" readonly>0°C * (9/5) + 32 = 194°F</textarea>
+      </section>
+
+      <!-- penjelasan -->
+      <section class="penjelasan">
+        <a href="#">Fahrenheit ke Celsius</a>
+        <div class="detail">
+          <h3>Cara Konversi Dari Celsius (°C) ke Fahrenheit (°F)</h3>
+          <p>
+            Suhu <em>S</em> dalam derajat Fahrenheit (°F) sama dengan suhu
+            <em>S</em> dalam derajat Celsius (°C) dikali
+            <strong>9/5</strong> lalu ditambah <strong>32</strong>.
+          </p>
+          <p>
+            <strong
+              >S<span>(°F)</span> = (S<span>(°C)</span> × 9/5) + 32</strong
+            >
+          </p>
+          <p>atau</p>
+          <p>
+            <strong
+              >S<span>(°F)</span> = (S<span>(°C)</span> × 1.8) + 32</strong
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <p>&copy; 2025 Website Konversi Suhu by Eko Asmoro</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
